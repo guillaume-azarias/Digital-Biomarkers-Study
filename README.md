@@ -1,24 +1,20 @@
 # Detection of abnormal activity using a wearable biosensor
 
-## Background:
+## Background
+In the last few decades, the miniaturization of wearable sensors and improvement of data transmission technologies allowed for collecting medically relevant data called digital biomarkers. This data is revolutionising our modern Medicine by offering new perspectives to better understand human physiology and develop personalized medicine. Therefore, new methods for digital biomarker data analysis, leveraging the power of Artificial Intelligence, are needed to characterise health status, detect disease progression steps or consolidate medical diagnostics.
 
-This repository is an adaptation of a capstone project realised during a Data Science bootcamp. The dataset used here is WESAD, a publicly available dataset for wearable stress and affect detection available [here](https://archive.ics.uci.edu/ml/datasets/WESAD+%28Wearable+Stress+and+Affect+Detection%29). They published the following paper:
-Philip Schmidt, Attila Reiss, Robert Duerichen, Claus Marberger and Kristof Van Laerhoven. 2018. Introducing WESAD, a multimodal dataset for Wearable Stress and Affect Detection. In 2018 International Conference on Multimodal Interaction (ICMI ’18), October 16–20, 2018, Boulder, CO, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3242969.3242985
+In this project, we will use a publicly available dataset for wearable stress and affect detection (WESAD). 17 participants were submitted to a study protocol designed to elicit three different affective states (neutral, stress, amusement), while wearing two devices collecting physiological data (chest-worn and wrist-worn device). In order to validate the study protocol, each participant filled self-reports to characterise their stress status, that could be used as Ground Truth data.
 
-## Project Goals : Find patterns in the sensor signals that correlate with a stress status.
+## Project Goals:
 
-## Objectives :
+The first goal of this project is to integrate the sensor data into one or several outcome measures, which meaningfully recapitulate the stress status of the subject. The second challenge would be to provide an analysis method allowing for the earliest (using the minimal amount of data) and most reliable detection of change in stress status.
 
-This project focuses on analysing data derived from wearable sensors using the time series forecasting method Prophet from facebook.
-
-The overall goal is to find patterns in the sensors' signals that correlate with a stress status.
-
-Please note that as of mid-September 2020, this project is under development and may contain bugs. Please contact me for any information.
 
 ## Milestones:
-**Milestones 1**: Fetch and structure and normalize the data. Identify patterns, detect certain activities.
 
-**Milestones 2**: Possibility to detect early change in stress data.
+ Milestones 1: Structure and normalize the data. Identify patterns and characterise stress-related status.
+ Milestones 2: Detect early change in stress data. Demonstrate the trade-off between early and reliable detection methods.
+
 
 ## Data:
 
@@ -52,6 +48,9 @@ The [dataset's readme-file](wesad_readme.pdf) contains all further details with 
 **`2_forecasting`**: Anomaly detection using time-series forecasting using Prophet from facebook
 
 **`3_dashboard`**:  Web interface dedicated to the caregivers to inform and alert on the patient activities.
+
+Reference
+Philip Schmidt, Attila Reiss, Robert Duerichen, Claus Marberger and Kristof Van Laerhoven. 2018. Introducing WESAD, a multimodal dataset for Wearable Stress and Affect Detection. In 2018 International Conference on Multimodal Interaction (ICMI ’18), October 16–20, 2018, Boulder, CO, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3242969.3242985
 
 > Questions:
 > Contact Guillaume Azarias at guillaume.azarias@hotmail.com
